@@ -14,10 +14,6 @@ var MAXIMUM_TEST_DATE_SECONDS = DateToSeconds(StringToDate(MAXIMUM_TEST_DATE_STR
 MINIMUM_TEST_DATE_STRING = "2022-06-15";
 var MINIMUM_TEST_DATE_SECONDS = DateToSeconds(StringToDate(MINIMUM_TEST_DATE_STRING));
 
-
-
-
-
 FIND_ALL_TESTS_REGARDLESS_OF_DATE = false;
 
 found_centres = document.querySelectorAll(".test-centre-details-link");
