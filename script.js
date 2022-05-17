@@ -7,7 +7,7 @@ function StringToDate(date_string){
 function DateToSeconds(date){
     return date.getTime() / 1000
 }
-MAXIMUM_TEST_DATE_STRING = "2022-08-24";
+MAXIMUM_TEST_DATE_STRING = "2022-07-19";
 
 var MAXIMUM_TEST_DATE_SECONDS = DateToSeconds(StringToDate(MAXIMUM_TEST_DATE_STRING));
 
