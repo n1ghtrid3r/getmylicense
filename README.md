@@ -8,4 +8,4 @@ Long waiting times for booking your driving practical test? Don't worry, some pe
 <h3>Run the Selenium IDE debugger</h3>
 
 <h4>The script.js file is the code that does the heavy handling. You needn't worry about it, though.</h4>
-<img src="https://media0.giphy.com/media/88PtFHTeDX52zh4a98/giphy.gif?cid=790b76110b37b12890f97561ae80f9aea3b8e45eccda4a1b&rid=giphy.gif&ct=g" width=1000>
+<img src="[https://media0.giphy.com/media/88PtFHTeDX52zh4a98/giphy.gif?cid=790b76110b37b12890f97561ae80f9aea3b8e45eccda4a1b&rid=giphy.gif&ct=g](https://media3.giphy.com/media/SS44mZ4u4R6gDM5c6y/giphy.gif?cid=790b761182c689243e88acdeb525a2dc61c3ea49dd162850&rid=giphy.gif&ct=g)" width=1000>
