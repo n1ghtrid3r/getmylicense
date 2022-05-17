@@ -37,5 +37,7 @@ for(const node of found_centres){
 }
 if(record_centre != null){
     record_centre.click();
+    return true;
 }
+return false;
 

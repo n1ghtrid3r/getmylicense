@@ -14,6 +14,13 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "b7b90633-82ce-45a8-b70b-bb3977437ff2",
+      "comment": "",
+      "command": "pause",
+      "target": "30000",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "9e091ce7-b0cb-4beb-8ff5-b73be39b53fd",
       "comment": "",
       "command": "open",
@@ -207,18 +214,32 @@
       "id": "3485cf0e-9b7c-43e4-b5d9-91029306019f",
       "comment": "",
       "command": "executeScript",
-      "target": "   function StringToDate(date_string){     return new Date(date_string) } function DateToSeconds(date){     return date.getTime() / 1000 } MAXIMUM_TEST_DATE_STRING = \"2022-12-19\";  var MAXIMUM_TEST_DATE_SECONDS = DateToSeconds(StringToDate(MAXIMUM_TEST_DATE_STRING));  MINIMUM_TEST_DATE_STRING = \"2022-06-15\"; var MINIMUM_TEST_DATE_SECONDS = DateToSeconds(StringToDate(MINIMUM_TEST_DATE_STRING));      FIND_ALL_TESTS_REGARDLESS_OF_DATE = false;  found_centres = document.querySelectorAll(\".test-centre-details-link\");   var record_centre = null; var record_centre_date_seconds = MAXIMUM_TEST_DATE_SECONDS;    for(const node of found_centres){     if(node.innerHTML.includes(\"available tests around\")){         centre_title = node.querySelector(\"h4\").innerHTML;         CENTRE_AVAILIBILITY_DATE_STRING = node.querySelector(\"h5\").innerHTML.split(\" \").at(-1).split(\"/\").reverse().join(\"-\");         CENTRE_AVAILABILITY_SECONDS = DateToSeconds(StringToDate(CENTRE_AVAILIBILITY_DATE_STRING));         if(FIND_ALL_TESTS_REGARDLESS_OF_DATE || (CENTRE_AVAILABILITY_SECONDS > MINIMUM_TEST_DATE_SECONDS && CENTRE_AVAILABILITY_SECONDS < MAXIMUM_TEST_DATE_SECONDS)){             if (CENTRE_AVAILABILITY_SECONDS < record_centre_date_seconds){                 record_centre = node;                 record_centre_date_seconds = CENTRE_AVAILABILITY_SECONDS;                 alert(centre_title);             }         }     } } if(record_centre != null){     record_centre.click();  }",
+      "target": "   function StringToDate(date_string){     return new Date(date_string) } function DateToSeconds(date){     return date.getTime() / 1000 } MAXIMUM_TEST_DATE_STRING = \"2022-08-24\";  var MAXIMUM_TEST_DATE_SECONDS = DateToSeconds(StringToDate(MAXIMUM_TEST_DATE_STRING));  MINIMUM_TEST_DATE_STRING = \"2022-06-15\"; var MINIMUM_TEST_DATE_SECONDS = DateToSeconds(StringToDate(MINIMUM_TEST_DATE_STRING));  FIND_ALL_TESTS_REGARDLESS_OF_DATE = false;  found_centres = document.querySelectorAll(\".test-centre-details-link\");   var record_centre = null; var record_centre_date_seconds = MAXIMUM_TEST_DATE_SECONDS;  for(const node of found_centres){     if(node.innerHTML.includes(\"available tests around\")){         centre_title = node.querySelector(\"h4\").innerHTML;         CENTRE_AVAILIBILITY_DATE_STRING = node.querySelector(\"h5\").innerHTML.split(\" \").at(-1).split(\"/\").reverse().join(\"-\");         CENTRE_AVAILABILITY_SECONDS = DateToSeconds(StringToDate(CENTRE_AVAILIBILITY_DATE_STRING));         if(FIND_ALL_TESTS_REGARDLESS_OF_DATE || (CENTRE_AVAILABILITY_SECONDS > MINIMUM_TEST_DATE_SECONDS && CENTRE_AVAILABILITY_SECONDS < MAXIMUM_TEST_DATE_SECONDS)){             if (CENTRE_AVAILABILITY_SECONDS < record_centre_date_seconds){                 record_centre = node;                 record_centre_date_seconds = CENTRE_AVAILABILITY_SECONDS;             }         }     } } if(record_centre != null){     record_centre.click();     return true; } return false;",
       "targets": [],
-      "value": "lst"
+      "value": "res"
     }, {
-      "id": "b7b90633-82ce-45a8-b70b-bb3977437ff2",
-      "comment": "",
-      "command": "pause",
-      "target": "30000",
+      "id": "ddcddab9-27b2-43b3-8b88-77de5003229b",
+      "comment": "End the test if we successfully found a date.",
+      "command": "if",
+      "target": "${res} === true",
       "targets": [],
       "value": ""
     }, {
+      "id": "04986c7c-e2bc-4097-a0a8-7f9f5804ada3",
+      "comment": "",
+      "command": "assert",
+      "target": "res",
+      "targets": [],
+      "value": "false"
+    }, {
       "id": "445021d5-afd5-4a3f-b70b-d5629ce8764e",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6b20acd3-fd84-4eba-8764-ac151e431dbc",
       "comment": "",
       "command": "end",
       "target": "",
