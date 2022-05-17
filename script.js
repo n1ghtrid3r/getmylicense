@@ -7,7 +7,7 @@ function StringToDate(date_string){
 function DateToSeconds(date){
     return date.getTime() / 1000
 }
-MAXIMUM_TEST_DATE_STRING = "2022-12-19";
+MAXIMUM_TEST_DATE_STRING = "2022-08-24";
 
 var MAXIMUM_TEST_DATE_SECONDS = DateToSeconds(StringToDate(MAXIMUM_TEST_DATE_STRING));
 
@@ -37,6 +37,5 @@ for(const node of found_centres){
 }
 if(record_centre != null){
     record_centre.click();
-
 }
 
