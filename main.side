@@ -207,9 +207,16 @@
       "id": "3485cf0e-9b7c-43e4-b5d9-91029306019f",
       "comment": "",
       "command": "executeScript",
-      "target": " MAXIMUM_TEST_DATE_STRING = \"2022-07-01\"; var MAXIMUM_TEST_DATE = new Date(MAXIMUM_TEST_DATE_STRING); var MAXIMUM_TEST_DATE_SECONDS = MAXIMUM_TEST_DATE.getTime() / 1000;   found_centres = document.querySelectorAll(\".test-centre-details-link\");  for(const node of found_centres){     if(node.innerHTML.includes(\"available tests around\")){         centre_title = node.querySelector(\"h4\").innerHTML;         CENTRE_AVAILIBILITY_DATE_STRING = node.querySelector(\"h5\").innerHTML.split(\" \").at(-1).split(\"/\").reverse().join(\"-\");         CENTRE_AVAILIBILITY_TEST_DATE = new Date(CENTRE_AVAILIBILITY_DATE_STRING);         CENTRE_AVAILABILITY_SECONDS = CENTRE_AVAILIBILITY_TEST_DATE.getTime() / 1000;         if(CENTRE_AVAILABILITY_SECONDS < MAXIMUM_TEST_DATE_SECONDS){             alert(CENTRE_AVAILIBILITY_DATE_STRING)         }     } }",
+      "target": " MAXIMUM_TEST_DATE_STRING = \"2022-07-01\"; var MAXIMUM_TEST_DATE = new Date(MAXIMUM_TEST_DATE_STRING); var MAXIMUM_TEST_DATE_SECONDS = MAXIMUM_TEST_DATE.getTime() / 1000;   FIND_ALL_TESTS_REGARDLESS_OF_DATE = true;  found_centres = document.querySelectorAll(\".test-centre-details-link\");  for(const node of found_centres){     if(node.innerHTML.includes(\"available tests around\")){         centre_title = node.querySelector(\"h4\").innerHTML;         CENTRE_AVAILIBILITY_DATE_STRING = node.querySelector(\"h5\").innerHTML.split(\" \").at(-1).split(\"/\").reverse().join(\"-\");         CENTRE_AVAILIBILITY_TEST_DATE = new Date(CENTRE_AVAILIBILITY_DATE_STRING);         CENTRE_AVAILABILITY_SECONDS = CENTRE_AVAILIBILITY_TEST_DATE.getTime() / 1000;           if(FIND_ALL_TESTS_REGARDLESS_OF_DATE || CENTRE_AVAILABILITY_SECONDS <= MAXIMUM_TEST_DATE_SECONDS){             alert(\"FOUND TEST AT \" + centre_title + \" ON \" + CENTRE_AVAILIBILITY_DATE_STRING);         }     } }",
       "targets": [],
       "value": "lst"
+    }, {
+      "id": "b7b90633-82ce-45a8-b70b-bb3977437ff2",
+      "comment": "",
+      "command": "pause",
+      "target": "10000",
+      "targets": [],
+      "value": ""
     }, {
       "id": "445021d5-afd5-4a3f-b70b-d5629ce8764e",
       "comment": "",
