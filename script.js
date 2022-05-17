@@ -13,7 +13,7 @@ for(const node of found_centres){
         CENTRE_AVAILIBILITY_TEST_DATE = new Date(CENTRE_AVAILIBILITY_DATE_STRING);
         CENTRE_AVAILABILITY_SECONDS = CENTRE_AVAILIBILITY_TEST_DATE.getTime() / 1000;
         if(CENTRE_AVAILABILITY_SECONDS <= MAXIMUM_TEST_DATE_SECONDS){
-            alert("FOUND TEST AT " + centre_title + " ON " + CENTRE_AVAILIBILITY_DATE_STRING)
+            alert("FOUND TEST AT " + centre_title + " ON " + CENTRE_AVAILIBILITY_DATE_STRING);
         }
     }
 }
