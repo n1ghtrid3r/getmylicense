@@ -1,0 +1,232 @@
+{
+  "id": "607e310d-5771-46a2-8fed-096b9b9f4c99",
+  "version": "2.0",
+  "name": "Driving Test",
+  "url": "https://driverpracticaltest.dvsa.gov.uk/manage?execution=e7s9",
+  "tests": [{
+    "id": "4a89e8a2-b685-45a9-89c3-2f37d8ef29a4",
+    "name": "Test 1",
+    "commands": [{
+      "id": "5d550f80-d62d-4db3-8fda-167e4ee28e00",
+      "comment": "",
+      "command": "times",
+      "target": "10",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9e091ce7-b0cb-4beb-8ff5-b73be39b53fd",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": "https://driverpracticaltest.dvsa.gov.uk/manage?execution=e7s9"
+    }, {
+      "id": "9b4751e3-5d02-4302-9c56-29393af9f631",
+      "comment": "",
+      "command": "click",
+      "target": "id=test-centre-change",
+      "targets": [
+        ["id=test-centre-change", "id"],
+        ["css=#test-centre-change", "css:finder"],
+        ["xpath=//a[@id='test-centre-change']", "xpath:attributes"],
+        ["xpath=//section[@id='confirm-booking-details']/section[2]/header/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/manage?execution=e12s1&_eventId=editTestCentre')]", "xpath:href"],
+        ["xpath=//header/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "74ccb97c-6c86-4a96-a3a2-a15256d3cfc9",
+      "comment": "",
+      "command": "click",
+      "target": "id=main",
+      "targets": [
+        ["id=main", "id"],
+        ["css=#main", "css:finder"],
+        ["xpath=//div[@id='main']", "xpath:attributes"],
+        ["xpath=//div[@id='page']/div[4]", "xpath:idRelative"],
+        ["xpath=//div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "59a25f8c-c262-48b4-8d2a-f3e8c38c49ab",
+      "comment": "",
+      "command": "type",
+      "target": "id=test-centres-input",
+      "targets": [
+        ["id=test-centres-input", "id"],
+        ["name=testCentreName", "name"],
+        ["css=#test-centres-input", "css:finder"],
+        ["xpath=//input[@id='test-centres-input']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/section/form/fieldset/div/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": "BA2"
+    }, {
+      "id": "cf9ade88-5c67-42ab-8eef-3a8358e6192b",
+      "comment": "",
+      "command": "click",
+      "target": "id=test-centres-submit",
+      "targets": [
+        ["id=test-centres-submit", "id"],
+        ["name=testCentreSubmit", "name"],
+        ["css=#test-centres-submit", "css:finder"],
+        ["xpath=//input[@id='test-centres-submit']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/section/form/fieldset/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f367f62d-23a5-429e-b3fd-21d584cf7981",
+      "comment": "",
+      "command": "click",
+      "target": "id=fetch-more-centres",
+      "targets": [
+        ["id=fetch-more-centres", "id"],
+        ["linkText=Show more results", "linkText"],
+        ["css=#fetch-more-centres", "css:finder"],
+        ["xpath=//a[contains(text(),'Show more results')]", "xpath:link"],
+        ["xpath=//a[@id='fetch-more-centres']", "xpath:attributes"],
+        ["xpath=//section[@id='search-results']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/manage?execution=e12s3&_eventId=loadMore')]", "xpath:href"],
+        ["xpath=//section/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Show more results')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "370a94d5-5846-49d6-bf54-39f9ee3ef90a",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-results",
+      "targets": [
+        ["id=search-results", "id"],
+        ["css=#search-results", "css:finder"],
+        ["xpath=//section[@id='search-results']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/section/section", "xpath:idRelative"],
+        ["xpath=//section/section", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f5afd99-97ae-4d42-a6be-87fc79251470",
+      "comment": "",
+      "command": "click",
+      "target": "id=fetch-more-centres",
+      "targets": [
+        ["id=fetch-more-centres", "id"],
+        ["linkText=Show more results", "linkText"],
+        ["css=#fetch-more-centres", "css:finder"],
+        ["xpath=//a[contains(text(),'Show more results')]", "xpath:link"],
+        ["xpath=//a[@id='fetch-more-centres']", "xpath:attributes"],
+        ["xpath=//section[@id='search-results']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/manage?execution=e12s4&_eventId=loadMore')]", "xpath:href"],
+        ["xpath=//section/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Show more results')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "04f40974-41fc-479c-a05f-0aabe34e6505",
+      "comment": "",
+      "command": "click",
+      "target": "id=fetch-more-centres",
+      "targets": [
+        ["id=fetch-more-centres", "id"],
+        ["linkText=Show more results", "linkText"],
+        ["css=#fetch-more-centres", "css:finder"],
+        ["xpath=//a[contains(text(),'Show more results')]", "xpath:link"],
+        ["xpath=//a[@id='fetch-more-centres']", "xpath:attributes"],
+        ["xpath=//section[@id='search-results']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/manage?execution=e12s5&_eventId=loadMore')]", "xpath:href"],
+        ["xpath=//section/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Show more results')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8880dedc-cae6-47d3-8eca-7331e17fad83",
+      "comment": "",
+      "command": "click",
+      "target": "id=fetch-more-centres",
+      "targets": [
+        ["id=fetch-more-centres", "id"],
+        ["linkText=Show more results", "linkText"],
+        ["css=#fetch-more-centres", "css:finder"],
+        ["xpath=//a[contains(text(),'Show more results')]", "xpath:link"],
+        ["xpath=//a[@id='fetch-more-centres']", "xpath:attributes"],
+        ["xpath=//section[@id='search-results']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/manage?execution=e12s5&_eventId=loadMore')]", "xpath:href"],
+        ["xpath=//section/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Show more results')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc109a4e-aa3a-4674-8942-e3fb3b2f4e8a",
+      "comment": "",
+      "command": "click",
+      "target": "id=fetch-more-centres",
+      "targets": [
+        ["id=fetch-more-centres", "id"],
+        ["linkText=Show more results", "linkText"],
+        ["css=#fetch-more-centres", "css:finder"],
+        ["xpath=//a[contains(text(),'Show more results')]", "xpath:link"],
+        ["xpath=//a[@id='fetch-more-centres']", "xpath:attributes"],
+        ["xpath=//section[@id='search-results']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/manage?execution=e12s7&_eventId=loadMore')]", "xpath:href"],
+        ["xpath=//section/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Show more results')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "70f8c9ca-3efc-4e4a-9ae6-9ec564a08c84",
+      "comment": "",
+      "command": "click",
+      "target": "id=fetch-more-centres",
+      "targets": [
+        ["id=fetch-more-centres", "id"],
+        ["linkText=Show more results", "linkText"],
+        ["css=#fetch-more-centres", "css:finder"],
+        ["xpath=//a[contains(text(),'Show more results')]", "xpath:link"],
+        ["xpath=//a[@id='fetch-more-centres']", "xpath:attributes"],
+        ["xpath=//section[@id='search-results']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/manage?execution=e12s8&_eventId=loadMore')]", "xpath:href"],
+        ["xpath=//section/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Show more results')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab6abae3-8686-4b7c-9cc4-5524390e3b8d",
+      "comment": "",
+      "command": "click",
+      "target": "id=main",
+      "targets": [
+        ["id=main", "id"],
+        ["css=#main", "css:finder"],
+        ["xpath=//div[@id='main']", "xpath:attributes"],
+        ["xpath=//div[@id='page']/div[4]", "xpath:idRelative"],
+        ["xpath=//div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3485cf0e-9b7c-43e4-b5d9-91029306019f",
+      "comment": "",
+      "command": "executeScript",
+      "target": "lst = document.querySelectorAll(\"a\"); var filter = Array.prototype.filter;   filtered = filter.call(lst, function(node){     return node.innerHTML.includes(\"available tests around\"); });  for(const element of filtered){     alert(element.innerHTML); } return filtered;",
+      "targets": [],
+      "value": "lst"
+    }, {
+      "id": "445021d5-afd5-4a3f-b70b-d5629ce8764e",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "61909b94-7fa3-4c18-9872-f2640e9798a9",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["4a89e8a2-b685-45a9-89c3-2f37d8ef29a4"]
+  }],
+  "urls": ["https://driverpracticaltest.dvsa.gov.uk/manage?execution=e7s9"],
+  "plugins": []
+}
