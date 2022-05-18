@@ -1,6 +1,3 @@
-
-
-
 function StringToDate(date_string){
     return new Date(date_string)
 }
